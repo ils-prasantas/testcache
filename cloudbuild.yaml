@@ -2,5 +2,6 @@ steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     args:
       - '-c'
+      - gcloud compute start-iap-tunnel "instance-test" 1433 --zone "us-central1-a" --local-host-port=localhost:1433
       - gcloud compute ssh "instance-test" --zone "us-central1-a" --tunnel-through-iap 
     entrypoint: '/bin/sh'
