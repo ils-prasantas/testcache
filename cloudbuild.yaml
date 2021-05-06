@@ -1,5 +1,7 @@
-steps:
-               - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
-                 args:
-                  - "-c"
-                  - "gcloud beta compute ssh --zone "us-central1-a" "instance-test"  --project "shaped-canyon-288212"
+
+  steps:
+                - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+                  args:
+                    - "-c"
+                    - "gcloud beta compute ssh --zone "us-central1-a" "instance-test"  --project "shaped-canyon-288212"
+                  entrypoint: "/bin/sh"
