@@ -1,2 +1,2 @@
 - name: 'gcr.io/cloud-builders/gcloud'
-gcloud beta compute ssh --zone "us-central1-a" "instance-test"  --project "shaped-canyon-288212"
+  args: ['bash', './myscript.sh']
