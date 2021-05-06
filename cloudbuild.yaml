@@ -1,4 +1,6 @@
 steps:
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     args:
-      - "gcloud beta compute ssh --zone "us-central1-a" "instance-test"  --project "shaped-canyon-288212"
+      - "-c"
+      - "gcloud compute ssh "instance-test" --zone "us-central1-a"  --tunnel-through-iap 
+    entrypoint: "/bin/sh"
