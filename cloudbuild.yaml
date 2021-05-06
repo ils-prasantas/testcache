@@ -1,2 +1,4 @@
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['bash', './myscript.sh']
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ['bash', './myscript.sh']
+
